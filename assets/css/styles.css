@@ -7,6 +7,64 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  background-color: hsl(212deg, 45%, 89%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.qr__container {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.qr__card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.qr__card-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qr__card-images_img {
+  border-radius: 1rem;
+}
+.qr__card-title, .qr__card-desc {
+  text-align: center;
+}
+.qr__card-title {
+  color: hsl(218deg, 44%, 22%);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.qr__card-desc {
+  color: hsl(220deg, 15%, 55%);
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 300px) {
+  .qr__container {
+    max-width: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
